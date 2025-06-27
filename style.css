@@ -1,0 +1,143 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Profile photo */
+.profile-banner {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 1000;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(91, 141, 239, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
+  padding: 1.5rem;
+  padding-left: 150px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #446;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #5b8def;
+}
+
+/* Section styles */
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 1.5rem auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+}
+
+h2 {
+  color: #5b8def;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  color: #444;
+}
+
+ul li {
+  margin-bottom: 0.7rem;
+}
+
+/* Contact links */
+a {
+  color: #5b8def;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  background-color: #c2e9fb;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 1px solid #a1c4fd;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  header {
+    padding-left: 1rem;
+    text-align: center;
+  }
+
+  .profile-banner {
+    position: static;
+    text-align: center;
+    margin: 1rem auto 0;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section {
+    padding: 1.2rem;
+    margin: 1rem;
+  }
+}
